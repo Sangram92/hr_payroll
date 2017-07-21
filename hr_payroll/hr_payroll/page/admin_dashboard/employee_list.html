@@ -1,0 +1,20 @@
+<h1>Employee List</h1>
+
+<table class="table table-hover">
+	<tr>
+		<th>Employee Name</th>
+		<th>Employee ID</th>
+		<th>User Id</th>
+		<th>Joining</th>
+		<th>Status</th>
+	</tr>
+	{% $.each(data, function(i, item){ %}
+		<tr>
+			<td>{%= item.employee_name %}</td>
+			<td>{%= item.name %}</td>
+			<td>{%= item.user_id %}</td>
+			<td>{%= item.date_of_joining %}</td>
+			<td>{%= item.status %}</td>
+		</tr>
+	{% }); %}
+</table>

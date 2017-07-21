@@ -60,7 +60,6 @@ frappe.AdminDashboard = Class.extend({
 	active_treeview: function() {
 		var me = this;
 		$('.active_tree').click(function() {
-			console.log("Yeahhh")
 			$('.treeview').toggleClass('active');
 		})
 	},
